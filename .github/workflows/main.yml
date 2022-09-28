@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     branches:
-      -main
+      - main
 
 jobs:
   build:
@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.12.11
         with:
-          heroku_api_key: ${{process.env.HEROKU_API_KEY}}
-          heroku_app_name: ${{process.env.HEROKU_APP_NAME}}
-          heroku_email: ${{process.env.HEROKU_EMAIL}}
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "polar-inlet-50513"
+          heroku_email: "ctnohilly@gmail.com"
   
