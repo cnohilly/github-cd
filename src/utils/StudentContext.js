@@ -20,7 +20,7 @@ export const StudentProvider = ({ children }) => {
       major: 'Data Science',
     },
   ]);
-
+  // Im making changes here to test that this thing is working ? 
   // Function to add a student
   const addStudent = (student) => {
     // Check if the user forgot to enter a name
